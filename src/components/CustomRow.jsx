@@ -25,7 +25,7 @@ function CustomRow({client, index,updateClient,  handleShowEditModal ,handleDele
 
   return (
     <tr key={client.id} className=' hover:bg-slate-50 border-gray-200 '>
-    <td className="px-2 sm:px-4 py-0 text-sm font-medium border-gray-200 whitespace-nowrap rounded-l-lg border-2  border-r-0">
+    <td className="px-2 sm:px-4 py-0 text-sm font-medium border-gray-200 whitespace-nowrap rounded-l-lg border-t-2 border-b-2 border-l-2">
 
       <FormControl
         type="text"
@@ -99,7 +99,7 @@ function CustomRow({client, index,updateClient,  handleShowEditModal ,handleDele
     </td>
     {/* handleDeleteClient */}
 
-    <td className=" px-2 sm:px-4 py-2 text-sm whitespace-nowrap  border-gray-200 rounded-r-lg border-2 border-l-0"> 
+    <td className=" px-2 sm:px-4 py-2 text-sm whitespace-nowrap  border-gray-200 rounded-r-lg border-t-2 border-b-2 border-r-2">
     <div className="flex justify-center items-center gap-2">
         <Button
         variant='contained'

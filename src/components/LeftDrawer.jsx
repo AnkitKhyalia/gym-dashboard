@@ -6,7 +6,7 @@ import { FaCalendarAlt } from 'react-icons/fa';
 const LeftDrawer = ({active}) => {
 
     return (
-        <div className=" w-64 h-screen bg-blue-900 m-3 rounded-xl shadow-md">
+        <div className=" w-64 h-screen bg-blue-950 m-3 rounded-xl shadow-md">
 
             <div className="flex items-center justify-center my-8">
                 <img className="" src="logo.png" alt="logo" />
