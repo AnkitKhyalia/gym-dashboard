@@ -10,7 +10,7 @@ This is a front-end web application for managing client data and appointments. I
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Anshum4n1/gym-trainer.git
+   git clone https://github.com/AnkitKhyalia/gym-dashboard.git
    ```
 
 2. Navigate to the project directory:
