@@ -12,7 +12,7 @@ function App() {
       <Router>
         <div className=''>
             {/* <Header /> */}
-            <div className='flex  gap-4'>
+            <div className='flex  gap-4 h-screen'>
               <LeftDrawer/> 
             <div  className='flex-1'>
               <Routes>

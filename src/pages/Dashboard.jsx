@@ -250,7 +250,7 @@ function Dashboard() {
 
   return (
 
-      <div className='flex flex-col gap-4  flex-1' >
+      <div className='flex flex-col gap-4  flex-1 pr-8 ' >
         <div className='flex justify-between items-center pt-10 border-b-2 border-gray-300 pb-2'>
           <h1 className='text-2xl font-bold text-gray-800'>Appointments</h1>
   
@@ -259,7 +259,7 @@ function Dashboard() {
           </Button>
         </div>
         {/* <div className="overflow-x-scroll sm:overflow-x-hidden md:rounded-lg"> */}
-        <div className=" pr-8 sm:mr-0 sm:rounded-lg">
+        <div className=" sm:mr-0 sm:rounded-lg">
           <table className=" w-full divide-y  divide-gray-200  border-separate border-spacing-y-3 ">
             <thead className=" ">
               <tr>
@@ -273,7 +273,7 @@ function Dashboard() {
                   Location
                 </th>
                 <th scope="col" className=" py-3  text-left rtl:text-right text-gray-800 font-semibold ">Appointments</th>
-                <th scope="col" className=" py-3  text-left rtl:text-right text-gray-800 font-semibold ">Action</th>
+                <th scope="col" className=" py-3  text-left rtl:text-right text-gray-800 font-semibold "></th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-x divide-gray-200 ">

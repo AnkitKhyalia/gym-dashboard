@@ -39,6 +39,10 @@ function Calendar(  ) {
 
   return (
     <div>
+      <div className='flex justify-between items-center pt-10 border-b-2 border-gray-300 pb-2'>
+          <h1 className='text-2xl font-bold text-gray-800'>Calendar</h1>
+  
+        </div>
       {/* <h2>Calendar</h2> */}
       <BigCalendar
         localizer={localizer}
