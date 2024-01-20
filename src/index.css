@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+  --yellow: #fdb200;
+  --sb-track-color: transparent;
+  --sb-thumb-color: #aaa;
+  --sb-size: 8px;
+}
+
+body{
+  font-family: 'Roboto', sans-serif !important;
+  background-color: rgb(218, 239, 255) !important;
+
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 4px solid transparent;
+  background-clip: content-box;
+   background-color: #d4d4d4;
+
+}
+
+::-webkit-scrollbar-track {
+  height: 0.5rem;
+  background-color: #ffffff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.form-control{
+  font-size: 14px !important;
+}
+
+.form-control:disabled{
+  background-color: inherit !important;
+  border:  none;
+}
+.rbc-calendar{
+  background-color: white !important;
+  padding: 25px 20px;
+  border-radius: 10px;
+}
