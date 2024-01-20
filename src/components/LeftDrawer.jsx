@@ -1,26 +1,32 @@
+import { Nav } from 'react-bootstrap';
+import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-router-dom';
+import { FaCalendarAlt } from 'react-icons/fa';
 
-const LeftDrawer = () => {
-  return (
-    <div className=" w-64 h-screen bg-gray-900">
+const LeftDrawer = ({active}) => {
 
-        <div className="flex items-center justify-center mt-10">
-            <img className="h-12" src="https://img.icons8.com/color/96/000000/two-hearts.png" alt="logo"/>
+    return (
+        <div className=" w-64 h-screen bg-blue-900 m-3 rounded-xl shadow-md">
+
+            <div className="flex items-center justify-center my-8">
+                <img className="" src="logo.png" alt="logo" />
+            </div>
+            <Nav className="flex flex-col gap-2 mx-2">
+                <>
+                    <Link to="/" className="nav-link text-white text-lg bg-gray-600 hover:bg-gray-500  rounded-md p-2">
+                    Appointments
+                    </Link>
+                    <Link to="/calendar" className="nav-link text-white text-lg bg-gray-600 hover:bg-gray-500  rounded-md p-2">
+                        Calendar
+                    </Link>
+
+                </>
+            </Nav>
+
+
         </div>
 
-        <nav className="mt-10">
-            <a className="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="/">
-                <span className="mx-3">Dashboard</span>
-            </a>
-            <a className="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="/calendar">
-                <span className="mx-3">Calendar</span>
-            </a>
-            <a className="flex items-center mt-4 py-2 px-6 bg-gray-700 bg-opacity-25 text-gray-100" href="/settings">
-                <span className="mx-3">Settings</span>
-            </a>
-        </nav>
-    </div>
-    
-  )
+    )
 }
 
 export default LeftDrawer

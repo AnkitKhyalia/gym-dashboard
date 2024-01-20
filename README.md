@@ -37,11 +37,11 @@ This is a front-end web application for managing client data and appointments. I
 
 ## Images
 
-![Home Page](public/image-2.png)
+<!-- ![Home Page](public/image-2.png) -->
 
-![Calendar Page](public/image-4.png)
+<!-- ![Calendar Page](public/image-4.png) -->
 
-![Agenda Section(Calendar Page)](public/image-3.png)
+<!-- ![Agenda Section(Calendar Page)](public/image-3.png) -->
 
 ## Usage
 

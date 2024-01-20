@@ -9,7 +9,6 @@ import AddAppointment from '../components/AddAppointment';
 import { v4 as uuidv4 } from 'uuid';
 import CustomRow from '../components/CustomRow';
 import { AddOutlined } from '@mui/icons-material';
-import LeftDrawer from '../components/LeftDrawer';
 
 const CLIENT_DATA = [
   { id: uuidv4(), firstName: 'John', lastName: 'Doe', location: 'New York', appointments: [] },
@@ -250,29 +249,31 @@ function Dashboard() {
 
 
   return (
-    <div className='flex  gap-4'>
-      <LeftDrawer/> 
+
       <div className='flex flex-col gap-4  flex-1' >
-        <div className='flex justify-end '>
+        <div className='flex justify-between items-center pt-10 border-b-2 border-gray-300 pb-2'>
+          <h1 className='text-2xl font-bold text-gray-800'>Appointments</h1>
+  
           <Button variant="success" onClick={handleShowAddClientModal} className='flex items-center' >
             <AddOutlined fontSize='small' color='blue' /> Add Client
           </Button>
         </div>
-        <div className="overflow-x-scroll sm:overflow-x-hidden border border-gray-200 shadow-md md:rounded-lg">
-          <table className=" w-full divide-y  divide-gray-200   ">
-            <thead className="bg-slate-200 ">
+        {/* <div className="overflow-x-scroll sm:overflow-x-hidden md:rounded-lg"> */}
+        <div className=" pr-8 sm:mr-0 sm:rounded-lg">
+          <table className=" w-full divide-y  divide-gray-200  border-separate border-spacing-y-3 ">
+            <thead className=" ">
               <tr>
-                <th scope="col" className="px-12 py-3.5  text-left rtl:text-right text-gray-800 font-semibold ">
+                <th scope="col" className=" py-3  text-left rtl:text-right text-gray-800 font-semibold ">
                   First Name
                 </th>
-                <th scope="col" className="px-12 py-3.5  text-left rtl:text-right text-gray-800 font-semibold ">
+                <th scope="col" className=" py-3  text-left rtl:text-right text-gray-800 font-semibold ">
                   Last Name
                 </th>
-                <th scope="col" className="px-4 py-3.5  text-left rtl:text-right text-gray-800 font-semibold ">
+                <th scope="col" className=" py-3  text-left rtl:text-right text-gray-800 font-semibold ">
                   Location
                 </th>
-                <th scope="col" className="px-4 py-3.5  text-left rtl:text-right text-gray-800 font-semibold ">Appointments</th>
-                <th scope="col" className="px-4 py-3.5  text-left rtl:text-right text-gray-800 font-semibold ">Action</th>
+                <th scope="col" className=" py-3  text-left rtl:text-right text-gray-800 font-semibold ">Appointments</th>
+                <th scope="col" className=" py-3  text-left rtl:text-right text-gray-800 font-semibold ">Action</th>
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-x divide-gray-200 ">
@@ -292,7 +293,7 @@ function Dashboard() {
         <DeleteModal showDeleteModal={showDeleteModal} handleCloseDeleteModal={handleCloseDeleteModal} confirmDeleteAppointment={confirmDeleteAppointment} confirmDeleteClient={confirmDeleteClient} isClient={isClient} />
         <AddClient showAddClientModal={showAddClientModal} setShowAddClientModal={setShowAddClientModal} handleAddClient={handleAddClient} />
       </div>
-    </div>
+
   );
 }
 

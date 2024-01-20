@@ -24,8 +24,8 @@ function CustomRow({client, index,updateClient,  handleShowEditModal ,handleDele
 
 
   return (
-    <tr key={client.id} className=' hover:bg-slate-50 border-r border-gray-200 '>
-    <td className="px-2 sm:px-4 py-0 text-sm font-medium border-r border-gray-200 whitespace-nowrap">
+    <tr key={client.id} className=' hover:bg-slate-50 border-gray-200 '>
+    <td className="px-2 sm:px-4 py-0 text-sm font-medium border-gray-200 whitespace-nowrap rounded-l-lg border-2  border-r-0">
 
       <FormControl
         type="text"
@@ -35,7 +35,7 @@ function CustomRow({client, index,updateClient,  handleShowEditModal ,handleDele
         isInvalid={isSubmitted && !firstName}
       />
     </td>
-    <td className="px-2 sm:px-4 py-2 text-sm font-medium border-r border-gray-200 whitespace-nowrap">
+    <td className="px-2 sm:px-4 py-2 text-sm font-medium border-gray-200 whitespace-nowrap border-t-2 border-b-2">
 
       <FormControl
       type="text"
@@ -45,7 +45,7 @@ function CustomRow({client, index,updateClient,  handleShowEditModal ,handleDele
       isInvalid={isSubmitted && !lastName}
     />
     </td>
-    <td className="px-2 sm:px-4 py-2 text-sm border-r border-gray-200 whitespace-nowrap">
+    <td className="px-2 sm:px-4 py-2 text-sm border-gray-200 whitespace-nowrap border-t-2 border-b-2">
  
       <FormControl
       type="text"
@@ -56,7 +56,7 @@ function CustomRow({client, index,updateClient,  handleShowEditModal ,handleDele
 
     />
     </td>
-    <td className="px-2 sm:px-4 py-2 text-sm whitespace-nowrap border-r border-gray-200">
+    <td className="px-2 sm:px-4 py-2 text-sm whitespace-nowrap border-gray-200 border-t-2 border-b-2">
     <ul className='pt-3 px-0 ' >
       {client.appointments.map((appointment, index) => (
         <li key={index}  className='flex gap-2 mb-2' >
@@ -99,7 +99,7 @@ function CustomRow({client, index,updateClient,  handleShowEditModal ,handleDele
     </td>
     {/* handleDeleteClient */}
 
-    <td className=" px-2 sm:px-4 py-2 text-sm whitespace-nowrap  border-gray-200">
+    <td className=" px-2 sm:px-4 py-2 text-sm whitespace-nowrap  border-gray-200 rounded-r-lg border-2 border-l-0"> 
     <div className="flex justify-center items-center gap-2">
         <Button
         variant='contained'
